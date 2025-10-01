@@ -27,4 +27,15 @@ Scoring
 - Generates an overall phishing probability score.
 - Provides a clear verdict (e.g., Safe, Suspicious, or Phishing).
 
-  
+  # How PhishScan Works
+Input: Accepts either an email file (e.g., .eml) or a direct URL.
+- Extraction & Parsing: Pulls out key elements — headers, body, and attachments from emails; URL components from links.
+- Analysis Modules: Runs each module (header checks, URL scans, content analysis, etc.) on the extracted data.
+- API Integration: Connects to external threat intelligence services (such as VirusTotal and AbuseIPDB) to gather the latest threat information.
+- Scoring Algorithm: Combines results from all modules using a weighted scoring system.
+- Output: Produces a clear report summarizing individual checks, the overall score, and the final verdict.- **Input**: Accepts either an email file (e.g., .eml) or a direct URL.
+- Extraction & Parsing: Pulls out key elements — headers, body, and attachments from emails; URL components from links.
+- **Analysis Modules**: Runs each module (header checks, URL scans, content analysis, etc.) on the extracted data.
+- API Integration: Connects to external threat intelligence services (such as VirusTotal and AbuseIPDB) to gather the latest threat information.
+- Scoring Algorithm: Combines results from all modules using a weighted scoring system.
+- Output: Produces a clear report summarizing individual checks, the overall score, and the final verdict.
