@@ -7,7 +7,7 @@ PhishScan is a Python-based tool designed to examine emails and URLs for potenti
 Email Header Analysis
 - Validates SPF, DKIM, and DMARC authentication results.
 - Checks header alignment to identify potential spoofing attempts.
-- 
+  
 Sender Reputation
 - Performs WHOIS lookups to gather domain registration details.
 - Integrates with VirusTotal and AbuseIPDB to assess domain and IP reputation.
@@ -26,3 +26,5 @@ Attachment Checking
 Scoring 
 - Generates an overall phishing probability score.
 - Provides a clear verdict (e.g., Safe, Suspicious, or Phishing).
+
+  
