@@ -104,7 +104,7 @@ source ~/.bashrc
 
 (or simply open a new terminal session)
 
----
+
 
 #### **Windows (Command Prompt — Temporary)**  
 You can set environment variables temporarily in Command Prompt using:
@@ -118,7 +118,6 @@ set IPQS_API_KEY="your_actual_ipqs_key"
 
 *These values remain active only for the current session.*
 
----
 
 #### **Windows (PowerShell — Temporary)**  
 Alternatively, you can set them temporarily in PowerShell:
@@ -132,7 +131,6 @@ $Env:IPQS_API_KEY="your_actual_ipqs_key"
 
 *These variables also last only for the current session.*
 
----
 
 #### **Windows (Persistent — Recommended)**  
 For permanent configuration:
@@ -144,7 +142,7 @@ For permanent configuration:
 
 This ensures the keys are always available across all sessions.
 
----
+
 
 If any required API keys are missing, certain checks may be skipped or the tool may operate with limited functionality.  
 The script should ideally handle missing keys gracefully by displaying a clear warning.
