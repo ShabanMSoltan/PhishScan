@@ -47,6 +47,7 @@ Input: Accepts either an email file (e.g., .eml) or a direct URL.
 git clone https://github.com/ShabanMSoltan/PhishScan.git
 cd PhishScan
 ```
+---
 2- Create and Activate a Virtual Environment (Recommended):
 
 -Linux:
@@ -59,6 +60,7 @@ source venv/bin/activate
 python -m venv venv
 venv\Scripts\activate
 ```
+---
 3- Install Dependencies: Make sure your repository includes a requirements.txt file. If it doesn’t, you can generate one after installing the packages manually during development.
 ```bash
 # First time setup or if requirements.txt is missing
