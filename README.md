@@ -39,3 +39,37 @@ Input: Accepts either an email file (e.g., .eml) or a direct URL.
 - API Integration: Connects to external threat intelligence services (such as VirusTotal and AbuseIPDB) to gather the latest threat information.
 - Scoring Algorithm: Combines results from all modules using a weighted scoring system.
 - Output: Produces a clear report summarizing individual checks, the overall score, and the final verdict.
+
+# Setup Guide
+1- Clone the Repository:
+
+```bash
+git clone https://github.com/ShabanMSoltan/PhishScan.git
+cd PhishScan
+```
+2- Create and Activate a Virtual Environment (Recommended):
+
+-Linux:
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+-Windows:
+```bash
+python -m venv venv
+venv\Scripts\activate
+```
+3- Install Dependencies: Make sure your repository includes a requirements.txt file. If it doesn’t, you can generate one after installing the packages manually during development.
+```bash
+# First time setup or if requirements.txt is missing
+pip install requests beautifulsoup4 dnspython python-whois tabulate html5lib
+pip freeze > requirements.txt # To generate the file for others
+
+# If requirements.txt is already present
+pip install -r requirements.txt
+```
+
+2ز
+2ز
+
+
