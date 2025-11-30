@@ -70,7 +70,8 @@ pip freeze > requirements.txt # To generate the file for others
 # If requirements.txt is already present
 pip install -r requirements.txt
 ```
-🔑 **API Key Configuration (Important)**
+---
+4- **API Key Configuration (Important)**
 
 This tool relies on external security services that require valid API keys.  
 **Do NOT hard-code API keys inside the script.**  
