@@ -80,15 +80,14 @@ def runPEnv():
     """Clears the screen and prints the banner."""
     os.system('cls' if os.name == 'nt' else 'clear') # Clear screen for Windows/Linux/Mac
     print(f'''
-{GREEN}__________.__    .__       .__  ________          __                 __
-\______   \  |__ |__| _____|__| \______ \   _____/  |_  ____   _____/  |_  ___________
- |     ___/  |  \|  |/  ___/  |  |    |  \_/ __ \   __\/ __ \_/ ___\   __\/  _ \_  __ \\
- |    |   |   Y  \  |\___ \|  |  |    `   \  ___/|  | \  ___/\  \___|  | (  <_> )  | \/
- |____|   |___|  /__/____  >__| /_______  /\___  >__|  \___  >\___  >__|  \____/|__|
-               \/        \/             \/     \/          \/     \/
-                                                                                   {END}
+{GREEN} ____  _     _     _      ____                 
+|  _ \| |__ (_)___| | __ / ___|  ___ __ _ _ __ 
+| |_) | '_ \| / __| |/ / \___ \ / __/ _` | '__|
+|  __/| | | | \__ \   <   ___) | (_| (_| | |   
+|_|   |_| |_|_|___/_|\_\ |____/ \___\__,_|_|   
+                                                                            {END}
 
-                        [ {RED}Phishi Detector  {END}|{RED}   Unmasking phishing  {END}]
+                        [ {RED}PhishScan  {END}|{RED}   Unmasking phishing  {END}]
 ''')
 
 def colorize_value(value, threshold=None):
@@ -2703,7 +2702,7 @@ class EmailAuthenticationChecker:
 def main():
     """Main function to handle user interaction and initiate analysis."""
     runPEnv()
-    print(f"Welcome to Phishi Detector!")
+    print(f"Welcome to PhishScan!")
     # Reminder about dependencies
     print(f"{YELLOW}Note:{END} Ensure required libraries are installed (requests, beautifulsoup4, dnspython, python-whois, tabulate, html5lib).")
     print(f"{YELLOW}Tip:{END} Create a 'requirements.txt' file and run 'pip install -r requirements.txt'.")
@@ -2770,7 +2769,7 @@ def main():
                  print(f"{RED}Error: URL analysis returned no result or an unexpected format.{END}")
 
         elif choice == 'Q':
-            print("Exiting Phishi Detector. Stay safe!")
+            print("Exiting PhishScan. Stay safe!")
             break
         else:
             print(f"{RED}Invalid choice. Please enter 1, 2, or Q.{END}")
@@ -2795,3 +2794,4 @@ if __name__ == "__main__":
     # from datetime import timedelta
 
     main()
+
