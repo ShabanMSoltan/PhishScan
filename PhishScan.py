@@ -87,7 +87,7 @@ def runPEnv():
 |_|   |_| |_|_|___/_|\_\ |____/ \___\__,_|_|   
                                                                             {END}
 
-                        [ {RED}PhishScan  {END}|{RED}   Unmasking phishing  {END}]
+                        [ {RED}PhishScan  {END}|{RED}   Dr/Safy  {END}]
 ''')
 
 def colorize_value(value, threshold=None):
@@ -2794,4 +2794,5 @@ if __name__ == "__main__":
     # from datetime import timedelta
 
     main()
+
 
