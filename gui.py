@@ -1223,7 +1223,7 @@ class AnalysisWorker(QObject):
 class PhishiDetectorApp(QMainWindow):
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("Phishi Detector GUI")
+        self.setWindowTitle("PhishScan GUI")
         self.setGeometry(100, 100, 950, 750) # Slightly larger window
 
         # --- Dark Theme Stylesheet ---
@@ -1414,7 +1414,7 @@ class PhishiDetectorApp(QMainWindow):
         self.layout.setSpacing(18) # Adjust spacing
 
         # --- Title ---
-        self.title_label = QLabel("Phishi Detector")
+        self.title_label = QLabel("PhishScan")
         self.title_label.setObjectName("titleLabel")
         self.title_label.setAlignment(Qt.AlignCenter)
         self.layout.addWidget(self.title_label)
@@ -2172,3 +2172,4 @@ if __name__ == "__main__":
     main_window = PhishiDetectorApp()
     main_window.show()
     sys.exit(app.exec_())
+
